@@ -1,0 +1,28 @@
+You can use the `grep` command with the `-n` option to search for a specified word in a file and display the line numbers with matching results. Here's how you can do it:
+
+```bash
+#!/bin/bash
+
+# Check if the correct number of arguments is provided
+if [ $# -ne 2 ]; then
+    echo "Usage: $0 <word> <file>"
+    exit 1
+fi
+
+# Store the word and file name
+word="$1"
+file="$2"
+
+# Search for the word in the file and display line numbers with matching results
+grep -n "$word" "$file"
+```
+
+Save this script to a file (e.g., `search_word.sh`), make it executable (`chmod +x search_word.sh`), and then run it with the word you want to search for and the name of the file you want to search in:
+
+```bash
+./search_word.sh search_word.txt
+```
+
+Replace `search_word.txt` with the actual file name you want to search in.
+
+This script will display the line numbers along with the lines that contain the specified word in the specified file using the `grep` command with the `-n` option.

@@ -1,0 +1,5 @@
+a) List file and directoris....
+b) Show hidden file.
+c) Dislay human
+d) List all text
+e) Compress
